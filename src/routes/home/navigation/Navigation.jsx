@@ -1,6 +1,7 @@
 import React from "react";
 import { Fragment, useContext } from "react";
 import { Outlet } from "react-router-dom";
+import Crown from "../../../assets/crown.svg";
 // import Authentication from "../authentication/Authentication";
 import CartIcon from "../../../components/cartIcon/CartIcon";
 import CartDropDown from "../../../components/cartDropDown/CartDropDown";
@@ -28,8 +29,9 @@ const Navigation = () => {
     <Fragment>
       <NavigationContainer>
         <LogoContainer to="/">
-          {/* <Crown /> */}
-          <p>logo</p>
+          <NavLinks>
+            <img src={Crown} alt="img" />
+          </NavLinks>
         </LogoContainer>
         <NavLinks>
           <NavLink to="/shop">Shop</NavLink>
